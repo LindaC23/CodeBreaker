@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeBreaker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class = "game" onload = "initialize();">
+  <h1>Game</h1>
+  <div id="clock">Time remaining: 7</div>
+  <div id="clockimage">
+  </div>
+
+  <img src="images/vault.png" class="vault">
+  <div class="container">
+        <div class = "container1">
+        <div id="temp"></div>
+    </div>
+    <div class = "buttons">
+        <button class="num"id="1">1</button>
+        <button class="num"id="2">2</button>
+        <button class="num"id="3">3</button>
+        <button class="num"id= "clearbutton">Clear</button>
+    </div>
+  </div>
+  <div class = "container1">
+    <div id="hint"></div>
+  </div>
+  <div class="log">
+    <h3>Your Guesses:</h3>
+    <div id="log"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

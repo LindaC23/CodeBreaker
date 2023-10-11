@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeBreaker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>CodeBreaker</h1>
+  <div class = "paragraph"> 
+    <p>As an international sneak thief, you break into vaults all the time. Riddling out a simple 3 digit code is child’s play for you. But you must be getting sloppy in your old age because you’ve
+    tripped an alarm. In no time at all, the police will be all over the place. Can you get into the
+    vault before they arrive?
+    </p>
+  </div> 
+
+  <img src="images/robber.jpg" id="home">
+
+  <br />
+
+  <button id="startbutton">Start</button>
+
+  <script>
+    const startButton = document.getElementById("startbutton");
+
+    startButton.addEventListener("click", myFunction);
+
+    // moves the user to the game page
+    function myFunction(){
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+
+</html>

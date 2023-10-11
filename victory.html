@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeBreaker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>SUCCESS!</h1>
+  <p class="message">You successfully broke into the vault and scooped up all the treasures. As you leave the vault, you see red and blue lights in the far distance. Phew! That was a close one, maybe it's time to retire from this thief business. After all, you are getting a bit old. After looting that vault,
+    you have more than enough riches to last you all throughout your retirement. It's time to live a nice, peaceful life!
+     </p>
+   <div class="container2">
+    <img class= "oldman" src="images/oldman.png"> 
+    <img class= "openvault" src="images/vaultopen.png">
+   </div>
+  <button id="tryagain">Play again?</button>
+
+  <script>
+    const tryAgainButton = document.getElementById("tryagain");
+
+    tryAgainButton.addEventListener("click", restart);
+
+    // brings user back to the start screen
+    function restart(){
+        window.location.href = "index.html";
+    }
+  </script>
+</body>
+
+</html>

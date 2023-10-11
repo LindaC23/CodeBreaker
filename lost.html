@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeBreaker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>FAILURE</h1>
+  <p class="message">You weren't able to crack the code in time! The police swarmed the building and put you right into handcuffs. It seems that old age has truly taken a toll on you. 
+    Now you have to spend the rest of your life in prison! What a miserable retirement.
+  </p>
+  <img class = "lost" src="images/caught.png">
+  <button id="tryagain">Try Again?</button>
+  
+  <script>
+    const tryAgainButton = document.getElementById("tryagain");
+
+    tryAgainButton.addEventListener("click", restart);
+
+    // brings user back to the start screen
+    function restart(){
+        window.location.href = "index.html";
+    }
+  </script>
+</body>
+
+</html>
